@@ -109,16 +109,19 @@ body{
 
 @media (max-width:426px) {
     .tiutlo-lea{
-        margin-top: 1rem;
+        margin-top: 3rem;
+        font-size: 2.6rem;
         text-align: center;
     }
     .p-lea{
-        margin-top: 1rem;
-        font-size: 1.5rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
         text-align: center;
     }
     .button-lea{
         width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 10rem;
     }
     .flex-custom{
         display: flex;
