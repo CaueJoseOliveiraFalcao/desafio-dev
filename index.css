@@ -1,0 +1,130 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custom-nav{
+    background-color: #fff;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.logo-custom h1,a{
+    color: orange;
+    text-decoration: none;
+}
+.a-custom{
+    text-decoration: none;
+    color: black;
+}
+.butao-custom{
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    display: none;
+}
+.butao-custom:hover{
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.logo h1{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: orange;
+}
+.butao-custom:focus ~ .ul-custom{
+    height: 190px ;
+}
+.custom-nav,.ul-custom{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.ul-custom li{
+    padding: 0 20px;
+}
+
+@media (max-width:768px) {
+    .custom-nav,.ul-custom{
+        flex-direction: column;
+        align-items: unset;
+        background-color: gray;
+    }
+    .ul-custom{
+        text-align: center;
+        padding: 0;
+        height: 0;
+        transition: .3s;
+        overflow: hidden;
+    }
+    .ul-custom li{
+        padding: 20px;
+        margin: 0;
+        font-size:20px;
+    }
+    .custom-nav{
+        padding-top: 40px;
+    }
+
+    .butao-custom{
+        display: flex;
+        top: 30px;
+    }
+}
+
+
+#learing{
+    margin-top: 7rem;
+}
+.tiutlo-lea{
+    font-size: 3.5rem;
+}
+
+.p-lea{
+    font-size: 2rem;
+}
+
+.button-lea{
+    width: 50%;
+    padding: 1.0rem;
+    border-style: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    transition: .3s;
+}
+.button-lea:hover{
+    color: orange;
+    background-color: white;
+    border-style: solid;
+    border-color: orange;
+}
+
+@media (max-width:426px) {
+    .tiutlo-lea{
+        margin-top: 1rem;
+        text-align: center;
+    }
+    .p-lea{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .button-lea{
+        width: 100%;
+    }
+    .flex-custom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #learing{
+        margin-top: 1rem;
+    }
+}
